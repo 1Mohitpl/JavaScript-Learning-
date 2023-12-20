@@ -56,3 +56,8 @@ console.log("1" + "2" +1)
 console.log(1+2+2)
 
 console.log ( 4+46)
+
+
+let gamecounter  = 100;
+gamecounter ++;
+console.log(gamecounter);
