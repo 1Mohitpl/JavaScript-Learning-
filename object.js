@@ -68,3 +68,6 @@ console.log(mycarObject);
 
 delete mycarObject.size;       // delete an property from an object
 console.log(mycarObject);
+
+
+
