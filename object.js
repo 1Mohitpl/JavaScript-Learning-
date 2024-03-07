@@ -69,27 +69,82 @@ console.log(mycarObject);
 delete mycarObject.size;       // delete an property from an object
 console.log(mycarObject);
 
+console.log(mycarObject.constructor);
+console.log(Mycar.constructor);
 
 
- // let's create another function 
+let Mycar1 = new Function('len', 'collec', 'col' , 
+` 
+this.color = col;
+this.collection = collec;
+this.lenght = len;
+this.size = 13;
+this.draw = function () {
 
- function  Myhouse  ( col, price, add) {
+    console.log(this.size);
+}`);
 
-          this.color = col;
-          this.priceofHouse = price;
-          this.address = add;
- }
-
-
- let MyhouseObject = new Myhouse ("Black" , "1cr" , "India")
-
- console.log(MyhouseObject);
-
-
- MyhouseObject.size = "2bhk";
- console.log(MyhouseObject);     // add new property 
+ // object creation using mycar1 
+ let rec = new  Mycar1(2);
+ console.log(rec);
 
 
 
- delete MyhouseObject.color;
-console.log(MyhouseObject);    // delete an property
+
+
+
+
+
+
+
+
+
+
+// let's create another function 
+
+//  function  Myhouse  ( col, price, add) {
+
+//           this.color = col;
+//           this.priceofHouse = price;
+//           this.address = add;
+//  }
+
+
+//  let MyhouseObject = new Myhouse ("Black" , "1cr" , "India")
+
+//  console.log(MyhouseObject);
+
+
+//  MyhouseObject.size = "2bhk";
+//  console.log(MyhouseObject);     // add new property 
+
+
+
+//  delete MyhouseObject.color;
+// console.log(MyhouseObject);    // delete an property
+
+
+
+
+// object cloning using iteration methode
+
+let Car = {
+   
+  color : "Red",
+
+  price : "2cr",
+
+  Model  : "suv"
+  
+
+};
+
+let dest = {};
+
+
+for (let key in Car ){
+
+    dest [key] = Car[key];
+}
+
+console.log (dest)
