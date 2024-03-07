@@ -71,3 +71,25 @@ console.log(mycarObject);
 
 
 
+ // let's create another function 
+
+ function  Myhouse  ( col, price, add) {
+
+          this.color = col;
+          this.priceofHouse = price;
+          this.address = add;
+ }
+
+
+ let MyhouseObject = new Myhouse ("Black" , "1cr" , "India")
+
+ console.log(MyhouseObject);
+
+
+ MyhouseObject.size = "2bhk";
+ console.log(MyhouseObject);     // add new property 
+
+
+
+ delete MyhouseObject.color;
+console.log(MyhouseObject);    // delete an property
