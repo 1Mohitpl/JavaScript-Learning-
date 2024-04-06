@@ -8,11 +8,11 @@ let myobj = {
 
 const myFunction  = function() {
    
-    // console.log("hello mohit");
+    console.log("hello mohit");
 
 }
 
-// console.log ( typeof myFunction)
+console.log ( myFunction())
 
 
 
