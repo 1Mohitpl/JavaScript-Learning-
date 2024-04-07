@@ -18,3 +18,15 @@ console.log(array2.indexOf(46))   // check the index value where the attributes 
 const newArray = array2.join()   // adds all the elemenets of an array into a string
 console.log(newArray)
 console.log(typeof newArray)
+
+// slice and splice 
+
+console.log("original array", array2)
+
+const anotherArry = array2.slice(1,4)
+                                               // slice did not manupulated the original array 
+console.log("B", anotherArry)
+
+const anotherArry2 = array2.splice(1,4)
+console.log("after",array2)     // here see the splice method manupulated the original array 
+console.log("c" ,anotherArry2)
