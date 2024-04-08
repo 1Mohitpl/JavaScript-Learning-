@@ -73,3 +73,26 @@ console.log(tinderUser)
 console.log(Object.keys(tinderUser))    // converting all the objects into the arrays 
 console.log(Object.values(tinderUser))  // get the values of an objets in the array
 console.log(Object.entries(tinderUser)) // make an indivitual  key value into the array 
+
+
+
+//object destructuring 
+
+const course = {
+
+    courseName : "Data struture",
+    price : "999",
+    courseInstruture : "mohit"
+}
+
+const {courseInstruture : instruture } = course
+
+console.log(instruture)
+
+const navber = ({company}) => {
+
+}
+
+navber(company = "infotech")
+
+console.log(navber)
