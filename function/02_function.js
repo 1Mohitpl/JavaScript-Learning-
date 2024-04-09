@@ -1,4 +1,4 @@
-run()
+run()      // here we can call fuction before its declaretion, it is called hoisting 
 
 function  run () {
      
@@ -6,7 +6,7 @@ function  run () {
 }
 
 
-
+// moveing()    // we can't call function before its declaretion in function assignment 
  // name function assignment 
 let moveing = function walk () {
 
