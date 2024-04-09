@@ -41,7 +41,7 @@ console.log(sum(3,6,4,2,1,9))
 function sumValue (a,b){
 
         let total = 0;
-        for(let value of arguments)
+        for(let value of arguments)    // use argument object for passing multiple values as an parameter 
             total = total + value
         return total;
     
