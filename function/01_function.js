@@ -68,3 +68,6 @@ function returnSecondvalue (getarray){
 console.log(returnSecondvalue(myNewarray))
 
 console.log(returnSecondvalue([300,100,900]))    // pass a new array 
+
+
+
