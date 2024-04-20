@@ -28,9 +28,9 @@ const sayDate = function() {
      let nIntervalId;
 document.querySelector('#Start').addEventListener('click',function() {
       
-    if(!nIntervalId){   // check the interval is already is preasent or not
+      // check the interval is already is preasent or not
        nIntervalId = setInterval(sayDate, 2000);
-    }
+    
 
      
 })
@@ -38,4 +38,5 @@ document.querySelector('#Start').addEventListener('click',function() {
 document.querySelector('#Stop').addEventListener('click', function() {
 
     clearInterval(nIntervalId);
+    nIntervalId =null;
 })           
