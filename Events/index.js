@@ -16,3 +16,4 @@ document.querySelector('#clik').addEventListener('click', function () {
       clearTimeout(change);
       console.log('stop the setTimeout')
 })
+
