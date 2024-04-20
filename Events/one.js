@@ -28,7 +28,7 @@ const sayDate = function() {
      let nIntervalId;
 document.querySelector('#Start').addEventListener('click',function() {
       
-      // check the interval is already is preasent or not
+    if(!nIntervalId){   // check the interval is already is preasent or not
        nIntervalId = setInterval(sayDate, 2000);
     
 
