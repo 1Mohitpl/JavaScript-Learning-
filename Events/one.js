@@ -31,7 +31,7 @@ document.querySelector('#Start').addEventListener('click',function() {
     if(!nIntervalId){   // check the interval is already is preasent or not
        nIntervalId = setInterval(sayDate, 2000);
     
-
+    }
      
 })
       // Stope the interval 
