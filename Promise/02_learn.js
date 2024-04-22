@@ -4,15 +4,19 @@ const cart  = ["shirts", "shoes","toy"]
 //     procedTopayment(orderId);
 // });   // return order detils
 
-const promise = createOrder(cart);
+createOrder(cart)
 
-// console.log(promise);
-
-
-promise.then(function (orderId){
+  // promise channing                 // console.log(promise);
+.then(function (orderId){
     console.log(orderId);
-    // procedTopayment(orderId)
+    return orderId;
 })
+.then(function(orderId) {
+    return procedTopayment(orderId)
+})
+ .then(function (paymentInfo) {
+    console.log(paymentInfo)
+ })
 
 .catch (function(error) {
     console.log(error.message);
@@ -45,6 +49,11 @@ function createOrder(cart) {
     return prom;
 }
 
+function procedTopayment(orderId){
+    return new Promise (function (resolve, reject) {
+        resolve("payment is done")
+    });
+}
 function validcart(cart){
-    return false;
+    return true;
 }
