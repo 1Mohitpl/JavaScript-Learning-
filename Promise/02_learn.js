@@ -11,6 +11,9 @@ createOrder(cart)
     console.log(orderId);
     return orderId;
 })
+.catch (function(error) {
+    console.log(error.message);
+})
 .then(function(orderId) {
     return procedTopayment(orderId)
 })
@@ -18,9 +21,9 @@ createOrder(cart)
     console.log(paymentInfo)
  })
 
-.catch (function(error) {
-    console.log(error.message);
-})
+// .catch (function(error) {
+//     console.log(error.message);
+// })   
 
 //proudcer
 
@@ -55,5 +58,5 @@ function procedTopayment(orderId){
     });
 }
 function validcart(cart){
-    return true;
+    return false;
 }
