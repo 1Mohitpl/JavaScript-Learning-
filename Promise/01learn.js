@@ -48,11 +48,25 @@
 
 // fecth api call
 
-async  function utility () {
+// async  function utility () {
 
-    let product = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-     let output = await product.json();
-   console.log(output);
-}
+//     let product = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//      let output = await product.json();
+//    console.log(output);
+// }
 
-utility();
+// utility();
+
+const promisethree = new Promise(function(resolve, reject){
+    setTimeout(function() {
+      resolve({
+        userName : "chai",
+        age : '20',
+        emial : "chai@gmail.com"              // data consumetion
+      });
+    }, 5000)
+})
+
+promisethree.then(function(user){
+    console.log(user)
+})
