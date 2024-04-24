@@ -48,7 +48,7 @@ const student1 = {
     name : "ram",
     age : 23,
     info:  function ()  {
-     console.log(this.name);
+     console.log(this.age);
     }
 };
 
@@ -60,6 +60,21 @@ const student2 = {
 
     name : "sam",
     age : 24,
+    fun:  function ()  {
+        // console.log(this.age);
+                                  // Enclosing lexical context here ;
+                                  
+    const result = () => {                    
+        console.log(this.name);
+
+        };
+
+        result()
+    }
+
+    
 };
  
-student1.info.call(student2)          // value of this = student2
+student2.fun()      // value of this = student2
+
+
