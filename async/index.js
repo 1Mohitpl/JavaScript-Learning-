@@ -1,27 +1,34 @@
-const pr = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve("promise would be resolved")
-    }, 10000)
-})
+// const pr1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("promise would be resolved")
+//     }, 4000)
+// })
+
+// const pr2 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("promise would be resolved2")
+//     }, 10000)
+// })
 
 
-
-async function handlePromise () {
+// async function handlePromise () {
  
-    console.log("Hello world!!");
-    // js engine was waiting for promise to be resolved 
-    const val = await pr; 
-    console.log("nameste javascript")                      // await can only be used inside the async function
-    console.log(val);
+//     console.log("Hello world!!");
+//     // js engine was waiting for promise to be resolved 
+//     const val = await pr1;                              // handlePromise now exectuted after 4s before where left 
+//     console.log("nameste javascript")                      // await can only be used inside the async function
+//     console.log(val);
 
 
-    const val2 = await pr; 
-    console.log("nameste javascript2")                      // await can only be used inside the async function
-    console.log(val2);
+//     const val2 = await pr2; 
+//     console.log("nameste javascript2")                      // await can only be used inside the async function
+//     console.log(val2);
    
-}
+// }
 
-handlePromise();
+// handlePromise();
+
+// handlePromise suspend 
 
 // function earlyHnadlePromise () {
   
@@ -30,3 +37,29 @@ handlePromise();
 
 //     console.log("learning js ")
 // }
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++
+//Real world example of async await
+
+
+const student1 = {
+
+    name : "ram",
+    age : 23,
+    info:  function ()  {
+     console.log(this.name);
+    }
+};
+
+student1.info()
+
+
+                                       // call apply bind methods (Sharing methods)
+const student2 = {
+
+    name : "sam",
+    age : 24,
+};
+ 
+student1.info.call(student2)          // value of this = student2

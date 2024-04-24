@@ -43,7 +43,7 @@ let reactangle = {           // object create
 
 
 
-  // constructor function => pascal notation => first letter of every word is capital
+  //t  constructor function => pascal notation => firsletter of every word is capital
 
   function Mycar (col, collec, len) {
     
