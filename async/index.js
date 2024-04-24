@@ -43,16 +43,44 @@
 //Real world example of async await
 
 
-const student1 = {
+const student = {
 
-    name : "ram",
-    age : 23,
-    info:  function ()  {
+    name: "ram",
+    age: 23,
+    x:  () =>  {
      console.log(this.age);
     }
 };
 
-student1.info()
+student.x()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const student1 = {
+
+//     name : "ram",
+//     age : 23,
+//     x:   () => {
+//      console.log(this.age);
+//     }
+// };
+
+// student1.x()
 
 
                                        // call apply bind methods (Sharing methods)
@@ -61,15 +89,18 @@ const student2 = {
     name : "sam",
     age : 24,
     fun:  function ()  {
-        // console.log(this.age);
-                                  // Enclosing lexical context here ;
-                                  
-    const result = () => {                    
+        // console.log(this.age);  
+        const val = () => {                  
+            console.log(this.age);
+        const result = () => {                    
         console.log(this.name);
 
         };
-
         result()
+
+    };                       // Enclosing lexical context here ;
+       val()
+     
     }
 
     
@@ -78,3 +109,4 @@ const student2 = {
 student2.fun()      // value of this = student2
 
 
+// "this" inside the dom elements => reference to the   HTMLelement
