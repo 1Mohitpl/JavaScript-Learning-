@@ -4,7 +4,7 @@ let myobj = {
     age : "33",
 };
 
-// console.log(heros.name);
+console.log(heros.name);
 
 const myFunction  = function() {
    

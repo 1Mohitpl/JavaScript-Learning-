@@ -1,42 +1,42 @@
-// const pr1 = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve("promise would be resolved")
-//     }, 4000)
-// })
+const pr1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promise would be resolved")
+    }, 4000)
+})
 
-// const pr2 = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve("promise would be resolved2")
-//     }, 10000)
-// })
+const pr2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("promise would be resolved2")
+    }, 10000)
+})
 
 
-// async function handlePromise () {
+async function handlePromise () {
  
-//     console.log("Hello world!!");
-//     // js engine was waiting for promise to be resolved 
-//     const val = await pr1;                              // handlePromise now exectuted after 4s before where left 
-//     console.log("nameste javascript")                      // await can only be used inside the async function
-//     console.log(val);
+    console.log("Hello world!!");
+    // js engine was waiting for promise to be resolved 
+    const val = await pr1;                              // handlePromise now exectuted after 4s before where left 
+    console.log("nameste javascript")                      // await can only be used inside the async function
+    console.log(val);
 
 
-//     const val2 = await pr2; 
-//     console.log("nameste javascript2")                      // await can only be used inside the async function
-//     console.log(val2);
+    const val2 = await pr2; 
+    console.log("nameste javascript2")                      // await can only be used inside the async function
+    console.log(val2);
    
-// }
+}
 
-// handlePromise();
+handlePromise();
 
 // handlePromise suspend 
 
-// function earlyHnadlePromise () {
+function earlyHnadlePromise () {
   
-//     //here JS engine will not wait for promise to be resolved 
-//     pr.then((res) => console.log(res));
+    //here JS engine will not wait for promise to be resolved 
+    pr.then((res) => console.log(res));
 
-//     console.log("learning js ")
-// }
+    console.log("learning js ")
+}
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++
