@@ -1,27 +1,27 @@
 "use strict"; // treat all js code as newr version //
 
-//  alert (3+3) // we are using node js not browser , 
+//  alert (3+3) // we are using Nodejs not browser , 
 
 
-// console.log(3+3)
-//alert(3+3)
-// let name = "mohit"
-// let age = 22;
-// let isadmin = false
-// console.log(name, age, isadmin)
+console.log(3+3)
+// alert(3+3)
+let name = "mohit"
+let age = 22;
+let isadmin = false
+console.log(name, age, isadmin)
 
-// let score = "332ddf";
+let score = "332ddf";
 
-// console.log(typeof score);
-// console.log(typeof(score));
+console.log(typeof score);
+console.log(typeof(score));
 
-// let valueofnumber = Number (score)       // conservation of a value of a number
-                                        // "33"=>33;
-                                       // "33addc" => Nan
-                                       // True/false => 0/1;
-//                                        //  
-// console.log(typeof valueofnumber);  
-// console.log(valueofnumber);
+let valueofnumber = Number (score)       // conservation of a value of a number
+                                    //     "33"=>33;
+                                    //    "33addc" => Nan not a number: special type 
+                                    //    True/false => 0/1;
+                                       //  
+console.log(typeof valueofnumber);  
+console.log(valueofnumber);
 
 
 let  isboolean = "mohit"
