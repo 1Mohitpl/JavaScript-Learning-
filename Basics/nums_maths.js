@@ -7,7 +7,7 @@ console.log(value)
 
 
 console.log( value.toString().length)
-console.log(value.toFixed(2))
+console.log(value.toFixed(2))    // usde in ecommarce application
 
 
 const anotherNumber = 323.44545
