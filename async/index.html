@@ -6,7 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Learning javascript from nameste javascript</h1>
+    <div id="root"></div>
 </body>
-<script src="index.js"></script>
+   <script>
+
+     const heading = document.createElement("h1");
+      heading.innerHTML="chai aur javascript";
+
+      const root = document.getElementById("root");
+     
+    root.appendChild(heading);
+
+
+
+   </script>
 </html>
