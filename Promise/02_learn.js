@@ -1,8 +1,8 @@
 const cart  = ["shirts", "shoes","toy"]
 
-// createOrder(cart, function (orderId){
-//     procedTopayment(orderId);
-// });   // return order detils
+createOrder(cart, function (orderId){
+    procedTopayment(orderId);
+});   // return order detils
 
 createOrder(cart)
 
