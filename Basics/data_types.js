@@ -1,4 +1,4 @@
-"use strict"; // treat all js code as newr version //
+"use strict"; // treat all js code as newer version //
 
 //  alert (3+3) // we are using Nodejs not browser , 
 
@@ -21,7 +21,7 @@ let valueofnumber = Number (score)       // conservation of a value of a number
                                     //    True/false => 0/1;
                                        //  
 console.log(typeof valueofnumber);  
-console.log(valueofnumber);
+console.log(valueofnumber); // NaN -> not a number
 
 
 let  isboolean = "mohit"
@@ -61,3 +61,7 @@ console.log ( 4+46)
 let gamecounter  = 100;
 gamecounter ++;
 console.log(gamecounter);
+
+
+const age2 = "22";
+console.log(typeof age2);
