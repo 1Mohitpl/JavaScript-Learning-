@@ -1,28 +1,28 @@
 // call back function
 
-// function x (y) {
+function x (y) {
 
-// }
+}
 
-// x(function y(){    // call the function x and passing another function as an argument known as Call-back function
+x(function y(){    // call the function x and passing another function as an argument known as Call-back function
      
-// })
+})
 
 
-// setTimeout(() => {
-//     console.log("timer");
+setTimeout(() => {
+    console.log("timer");
     
-// }, 5000);
+}, 5000);
 
-// function x (y) {
-//    console.log("x");
-//    y();
-// }
+function x (y) {
+   console.log("x");
+   y();
+}
 
-// x(function y(){    
-//      console.log("y");
+x(function y(){    
+     console.log("y");
      
-// });
+});
 
 function attach(){
     let count = 0;
