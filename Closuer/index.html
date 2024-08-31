@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Real-time Search Text Display</title>
+    <style>
+        .search-container {
+            margin: 20px;
+        }
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Closuer</h1>
 
-    <script src="code.js"></script>
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search"
+            value="kfc"
+        >
+        <h1 id="displayText">kfc</h1>
+        <button class="search">Search</button>
+    </div>
+
+    <script>
+        // Get references to the input field and the h1 element
+        const searchInput = document.getElementById('searchInput');
+        const displayText = document.getElementById('displayText');
+
+        // Add an event listener to update the h1 text in real-time as the user types
+        searchInput.addEventListener('input', function() {
+            displayText.textContent = searchInput.value;
+            
+        });
+    </script>
+
 </body>
 </html>

@@ -41,3 +41,5 @@ return outer;
 
 var closer = outest()("hello world");
 closer();
+
+
