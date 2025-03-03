@@ -1,12 +1,12 @@
 // call back function
 
-function x (y) {
+// function x (y) {
 
-}
+// }
 
-x(function y(){    // call the function x and passing another function as an argument known as Call-back function
+// x(function y(){    // call the function x and passing another function as an argument known as Call-back function
      
-})
+// })
 
 
 setTimeout(() => {

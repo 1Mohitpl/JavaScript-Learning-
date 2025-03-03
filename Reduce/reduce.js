@@ -13,7 +13,7 @@ function findSum(arr){         // this is simple function to find out sum of var
 console.log(findSum(arr));
 
 
-// now reduce the above code with reduce function
+// now reduce the above code with reduce functiclson
 
 const output = arr.reduce(function(acc, curr){
      acc = acc + curr;
