@@ -13,3 +13,12 @@ Promise.resolve().then(() => {
 });
 
 console.log("ready to join immediately");
+
+
+const Person = {
+    name : 'jhon',
+    age : 25,
+    proffession : 'programmer'
+}
+
+console.table(Person);
