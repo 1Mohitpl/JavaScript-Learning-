@@ -6,5 +6,5 @@ function multyply(x) {
     }
  }
  
- console.log(multyply(5)(5)(5));
+ console.log(multyply(5)(5)(5)); 
  

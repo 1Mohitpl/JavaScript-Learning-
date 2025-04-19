@@ -1,7 +1,7 @@
 const pr1 = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("promise would be resolved")
-    }, 4000)
+    }, 5000)
 })
 
 const pr2 = new Promise((resolve, reject) => {
@@ -9,6 +9,8 @@ const pr2 = new Promise((resolve, reject) => {
         resolve("promise would be resolved2")
     }, 10000)
 })
+
+console.log(" start learning async");
 
 
 async function handlePromise () {
@@ -29,84 +31,75 @@ async function handlePromise () {
 handlePromise();
 
 // handlePromise suspend 
+// const pr = new  Promise((resolve, reject) => {
+//     resolve("Before promised resolved");
+// })
+
+
+
 
 function earlyHnadlePromise () {
   
     //here JS engine will not wait for promise to be resolved 
-    pr.then((res) => console.log(res));
+    pr1.then((res) => console.log(res));
+    console.log("first promise");
+    
+}
 
-    console.log("learning js ")
+earlyHnadlePromise();
+
+
+console.log("end learning");
+
+// //+++++++++++++++++++++++++++++++++++++++++++++++
+// //Real world example of async await
+
+const API_URL = "https://api.github.com/users/1mohi";
+
+
+async function  promisehandle() {
+    try{
+        const data =   await fetch(API_URL);
+        const mydata = await data.json();
+        console.log(mydata);
+    }
+   catch(err){
+     console.log(err);
+     
+   }
+    
 }
 
 
-//+++++++++++++++++++++++++++++++++++++++++++++++
-//Real world example of async await
+promisehandle();
+// const student = {
 
-
-const student = {
-
-    name: "ram",
-    age: 23,
-    x:  () =>  {
-     console.log(this.age);
-    }
-};
-
-student.x()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const student1 = {
-
-//     name : "ram",
-//     age : 23,
-//     x:   () => {
+//     name: "ram",
+//     age: 23, 
+//     x:  () =>  {
 //      console.log(this.age);
 //     }
 // };
 
-// student1.x()
+// student.x()
 
 
-                                       // call apply bind methods (Sharing methods)
-const student2 = {
-
-    name : "sam",
-    age : 24,
-    fun:  function ()  {
-        // console.log(this.age);  
-        const val = () => {                  
-            console.log(this.age);
-        const result = () => {                    
-        console.log(this.name);
-
-        };
-        result()
-
-    };                       // Enclosing lexical context here ;
-       val()
-     
-    }
-
-    
-};
- 
-student2.fun()      // value of this = student2
 
 
-// "this" inside the dom elements => reference to the   HTMLelement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
