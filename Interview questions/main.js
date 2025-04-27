@@ -34,3 +34,5 @@ printName.apply(name2, ["Raiganj", "westbengal"]);
 
 const ans = printName.bind(name3, "Noida", "delhi");
 ans();
+
+/*******Polyfill */
