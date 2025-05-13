@@ -1,15 +1,15 @@
-function x(){
-    let a = 2;
-   return function y (){
-        console.log(a);
+// function x(){
+//     let a = 2;
+//    return function y (){
+//         console.log(a);
 
-    }
+//     }
 
-}
+// }
 
-var c = x();
-console.log(c);
-c();   // that return whole lexical scope which is function x
+// var c = x();
+// console.log(c);
+// c();   // that return whole lexical scope which is function x
 
 function x() {
     for(var i = 1; i<=6; i++){

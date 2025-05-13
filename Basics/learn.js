@@ -14,3 +14,13 @@ accountcity = "assam"
 
 console.log(accountemial);
 console.table([accountemial,accoutPassword,accountcity])
+
+
+let number = 300;
+ number = 400;
+function print(){
+    
+    console.log(number);
+}
+
+print(number);

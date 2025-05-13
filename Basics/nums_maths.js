@@ -1,9 +1,9 @@
 const score = 400
-console.log(score)
+console.log( score)
 
 
 const value = new Number(200)
-console.log(value)
+console.log( value)
 
 
 console.log( value.toString().length)

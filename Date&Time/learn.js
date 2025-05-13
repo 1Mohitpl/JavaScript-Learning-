@@ -22,4 +22,5 @@ console.log(typeof(num3));
 
 // let myTimeStamp = Date.now()
 
+
 // console.log(Math.floor(Date.now()/1000))      // converting time milliseconed into the second 
