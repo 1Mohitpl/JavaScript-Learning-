@@ -100,13 +100,18 @@ const person3 = {
     name : "Rahul",
     address : {
         city : 'kolkata',
-        state : 'west bengal'
+        state : 'west bengal',
+        school : {
+        name : "rchs"
     }
+    }
+
+   
 
 }
 
 const person4 = JSON.parse(JSON.stringify(person3));
-person4.address.city = "mumbai"
+person4.address.school.name = "kar"
 console.log(person4);
 console.log(person3)
 
