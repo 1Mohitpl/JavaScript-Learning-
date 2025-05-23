@@ -81,3 +81,5 @@ console.log(person3)
 - Above line of code, both the person pointing to the different memory location and also deep copy in nested objects.
 
 - Along with we can also use `Lodash` libery to robus deep cloning methodes
+
+# Local storage vs session vs cookies
